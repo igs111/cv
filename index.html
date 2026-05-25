@@ -7,38 +7,51 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Igor Godziewski - Portfolio</h1>
+
+  <!-- Sticky menu -->
+  <nav class="navbar">
+    <a href="#top">STRONA GŁÓWNA</a>
+    <a href="#media">REALIZACJE</a>
+    <a href="#profiles">PROFILE</a>
+  </nav>
+
+  <header id="top">
+    <h1>IGOR GODZIEWSKI - PORTFOLIO</h1>
+    <div class="wave"></div>
   </header>
 
-  <section class="media-section">
-    <div class="media-player">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/q3MrXBxsi5s"
-        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  <section id="media" class="media-section reveal">
+
+    <h2 class="section-title">MONTAŻ TELEDYSKU MUZYCZNEGO</h2>
+    <div class="yt-wrapper reveal">
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/q3MrXBxsi5s"
+        frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="media-player">
+    <h2 class="section-title reveal">MONTAŻ KRÓTKICH TREŚCI PROMOCYJNYCH</h2>
+    <div class="shorts-row reveal">
       <iframe src="https://www.instagram.com/reel/DLozp8pI7sM/embed"
         width="400" height="480" frameborder="0" allowfullscreen></iframe>
-    </div>
 
-    <div class="media-player">
       <iframe src="https://www.tiktok.com/embed/7519192193215581462"
         width="400" height="480" frameborder="0" allowfullscreen></iframe>
     </div>
+
   </section>
 
-  <section class="accounts">
+  <section id="profiles" class="accounts reveal">
     <h2>PROFILE PROWADZONE PRZEZE MNIE</h2>
+
     <div class="account-gallery">
-      <img src="konto1.png" alt="Konto 1" class="zoomable">
-      <img src="konto2.png" alt="Konto 2" class="zoomable">
+      <img src="konto1.png" class="zoomable" alt="Konto 1">
+      <img src="konto2.png" class="zoomable" alt="Konto 2">
     </div>
   </section>
 
+  <!-- Overlay powiększenia -->
   <div id="overlay" class="overlay">
     <span id="closeBtn">&times;</span>
-    <img id="overlayImg" src="" alt="Podgląd">
+    <img id="overlayImg" src="" alt="">
   </div>
 
   <script src="script.js"></script>
