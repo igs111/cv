@@ -50,26 +50,16 @@ body::before {
 
 /* header z falą */
 header {
-  background-color: #4b2bbd;
+  background: linear-gradient(to bottom, #4b2bbd 0%, #4b2bbd 60%, #f3f0ff 100%);
   color: white;
   text-align: center;
-  padding: 60px 20px 0;
+  padding: 60px 20px 80px;
   font-size: 2em;
   letter-spacing: 2px;
   position: relative;
   overflow: hidden;
 }
 
-.wave {
-  display: block;
-  width: 100%;
-  height: 120px;
-  margin-top: -1px;
-}
-
-.wave path {
-  fill: #ffffff; /* czysta biel */
-}
 
 /* sekcje – wszystkie nagłówki w fiolecie */
 .section-title {
