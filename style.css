@@ -34,7 +34,7 @@ body {
   to { opacity: 1; }
 }
 
-/* efekt rozmazania wokół kursora */
+/* efekt rozmazania wokół kursora (używane z .cursor-light w JS) */
 body::before {
   content: "";
   position: fixed;
@@ -57,6 +57,7 @@ header {
   font-size: 2em;
   letter-spacing: 2px;
   position: relative;
+  overflow: hidden;
 }
 
 .wave {
@@ -65,24 +66,24 @@ header {
   height: 100px;
 }
 
-/* sekcje */
+/* sekcje – wszystkie nagłówki w fiolecie */
 .section-title {
   text-align: center;
   font-size: 1.8em;
   margin: 40px 0 20px;
-  color: #00a86b;
+  color: #4b2bbd;
   letter-spacing: 2px;
 }
 
 .yt-wrapper {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto 60px;
 }
 
 .yt-wrapper iframe {
   width: 100%;
-  height: 480px;
+  height: 520px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
@@ -95,8 +96,8 @@ header {
 }
 
 .shorts-row iframe {
-  width: 400px;
-  height: 480px;
+  width: 420px;
+  height: 520px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
@@ -167,6 +168,7 @@ header {
   to { transform: scale(1); opacity: 1; }
 }
 
+/* jasna plama pod kursorem (tworzona w JS jako .cursor-light) */
 .cursor-light {
   position: fixed;
   width: 250px;
@@ -178,4 +180,3 @@ header {
   transition: opacity 0.3s ease;
   z-index: 1000;
 }
-
