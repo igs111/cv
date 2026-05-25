@@ -175,3 +175,90 @@ header {
   transition: opacity 0.3s ease;
   z-index: 1000;
 }
+
+/* --- RESPONSYWNOŚĆ --- */
+
+/* Dla ekranów do 1024px (tablety) */
+@media (max-width: 1024px) {
+  header {
+    font-size: 1.6em;
+    padding: 50px 15px 60px;
+  }
+
+  .yt-wrapper iframe {
+    height: 420px;
+  }
+
+  .shorts-row iframe {
+    width: 360px;
+    height: 460px;
+  }
+
+  .account-gallery img {
+    width: 260px;
+  }
+}
+
+/* Dla ekranów do 768px (telefony) */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.4em;
+    padding: 40px 10px 50px;
+  }
+
+  .section-title {
+    font-size: 1.4em;
+    margin: 30px 0 15px;
+  }
+
+  .yt-wrapper iframe {
+    height: 300px;
+  }
+
+  .shorts-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .shorts-row iframe {
+    width: 90%;
+    height: 400px;
+  }
+
+  .account-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .account-gallery img {
+    width: 85%;
+  }
+
+  #closeBtn {
+    font-size: 2em;
+    top: 20px;
+    right: 30px;
+  }
+}
+
+/* Dla bardzo małych ekranów (do 480px) */
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2em;
+    padding: 30px 10px 40px;
+  }
+
+  .yt-wrapper iframe {
+    height: 240px;
+  }
+
+  .shorts-row iframe {
+    height: 360px;
+  }
+
+  .account-gallery img {
+    width: 90%;
+  }
+}
