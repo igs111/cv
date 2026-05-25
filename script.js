@@ -34,4 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
+
+  /* PODŚWIETLANIE KURSORA */
+  document.addEventListener("mousemove", (e) => {
+    document.body.style.setProperty("--cursorX", e.clientX + "px");
+    document.body.style.setProperty("--cursorY", e.clientY + "px");
+    document.body.style.setProperty("--cursorX", e.clientX + "px");
+  });
 });
