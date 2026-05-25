@@ -52,4 +52,17 @@ body:hover::before {
   opacity: 1;
 }
 
+html, body {
+  cursor: none;
+}
+
+body {
+  cursor: none;
+}
+
+body::before {
+  position: fixed;
+}
+
+
 /* Aktualizacja pozycji kursora */
